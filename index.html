@@ -273,13 +273,13 @@
         <p class="text-body-secondary">Números disponibles:</p>
         <script>
           var numerosVendidos = [1, 2, 3, 7, 11, 13, 14, 15, 16, 21, 26, 27, 28, 33, 39, 42, 93];
-          document.write("<table class='table table-striped'><tr>");
+          document.write("<table class='table table-striped'>");
             for (var i = 1; i <= 100; i++) {
               if (!(numerosVendidos.includes(i))) {
-                document.write("<td>" + i + "</td>");
+                document.write("<tr><td>" + i + "</td></tr>");
               }
           }
-          document.write("</tr></table>");
+          document.write("</table>");
         </script>
       </div>
     </div>
