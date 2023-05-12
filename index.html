@@ -288,9 +288,11 @@
                 document.write("<tr><td>" + i + "</td></tr>");
               }
           }
+          let plantas = Math.round(numerosVendidos.length / 10);
           document.write("</table>");
-          document.write(`<strong>Plantas a sortear actualmente: ${Math.round(numerosVendidos.length / 10)}</strong>`);
+          document.write(`<strong>Plantas a sortear actualmente: ${plantas}</strong>`);
           console.log(`Cantidad de números vendidos: ${numerosVendidos.length}`);
+          console.log(`Probabilidades de ganar actuales: ${plantas/numerosVendidos.length*100}%`);
         </script>
       </div>
     </div>
