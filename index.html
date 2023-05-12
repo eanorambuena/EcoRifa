@@ -292,7 +292,7 @@
           document.write("</table>");
           document.write(`<strong>Plantas a sortear actualmente: ${plantas}</strong>`);
           console.log(`Cantidad de números vendidos: ${numerosVendidos.length}`);
-          console.log(`Probabilidades de ganar actuales: ${plantas/numerosVendidos.length*100}%`);
+          console.log(`Probabilidades de ganar actuales: ${Math.ceil(plantas/numerosVendidos.length*100)}%`);
         </script>
       </div>
     </div>
